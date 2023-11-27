@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="header">
+        <img src="icon128.png" width="50px" height="50px">
+        <h1>스트레칭 알림</h1>
+        <div class="toggle-switch">
+            <input type="checkbox" id="switch" checked data-notification="on" />
+            <label for="switch">알림 켜기/끄기</label>
+        </div>
+    </div>
+    <div class="toggle-content">
+        <div class="options">
+            <label class="option-large">
+                <input name="alert-option" type="radio" value="정각 알림" checked>
+                정각 알림
+            </label>
+            <label class="option-small">
+                <input name="alert-option" type="radio">
+                <input type="number" id="intervalInput" min="1" max="59" value="30">
+                분마다
+            </label>
+        </div>
+        <button id="applyButton" class="center-button">적용</button>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

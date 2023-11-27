@@ -1,0 +1,16 @@
+{
+    "name":"스트레칭 알람",
+    "description":"장시간 앉아있는 사람들을 위한 스트레칭용 알람",
+    "version":"1.0",
+    "manifest_version":3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons":{
+        "128":"icon128.png"
+    },
+    "permissions": ["alarms", "notifications", "storage", "activeTab"]
+}
